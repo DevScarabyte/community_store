@@ -38,17 +38,7 @@ class InvoicePaymentMethod extends PaymentMethod
     public function checkoutForm()
     {
         $pmID = PaymentMethod::getByHandle('invoice')->getID();
-
-        $this->addFooterItem("
-            <script type=\"text/javascript\">
-                 $(function() {
-                     $('div[data-payment-method-id=" . $pmID . "] .store-btn-complete-order').click(function(){
-                         $(this).attr({disabled: true}).val('" . t('Processing...') . "');
-                         $(this).closest('form').submit();
-                     });
-                 });
-            </script>
-        ");
+        $this->set('pmID', $pmID);
     }
 
     public function submitPayment()
