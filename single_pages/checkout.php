@@ -186,7 +186,7 @@ $csm = $app->make('cs/helper/multilingual');
                         <?php } ?>
 
                         <div class="row">
-                            <?php if ($shippingEnabled && $shippingModify) { ?>
+                            <?php if ($shippingEnabled && $shippingModify && $billingModify) { ?>
                             <div class="store-copy-billing-container col-md-12 mb-3 text-right text-end">
                                 <div class="form-group">
                                 <label>
