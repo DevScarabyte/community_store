@@ -119,23 +119,23 @@
 /* Checkout Page Component Visibility */
 
 .store-checkout-form-group-body {
-    display: none;
+    display: none !important;
 }
 
 .store-checkout-form-group-summary {
-    display: none;
+    display: none !important;
 }
 
 .store-checkout-form-group-complete .store-checkout-form-group-summary {
-    display: block;
+    display: block !important;
 }
 
 #store-checkout-form-group-signin .store-checkout-form-group-body {
-    display: block;
+    display: block !important;
 }
 
 .store-active-form-group .store-checkout-form-group-body {
-    display: block;
+    display: block !important;
 }
 
 .store-checkout-code-form {
